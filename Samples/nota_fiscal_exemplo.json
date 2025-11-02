@@ -1,9 +1,3 @@
-# ============================================================
-# ID: SAMPLE-001
-# Nome: Arquivo de Exemplo - Nota Fiscal
-# Descrição: JSON de exemplo para testar processamento
-# ============================================================
-
 {
   "id": "NF-20251102-001",
   "cliente": "Empresa ABC Ltda",
