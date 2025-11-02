@@ -1,0 +1,30 @@
+# ============================================================
+# ID: SAMPLE-001
+# Nome: Arquivo de Exemplo - Nota Fiscal
+# Descrição: JSON de exemplo para testar processamento
+# ============================================================
+
+{
+  "id": "NF-20251102-001",
+  "cliente": "Empresa ABC Ltda",
+  "cnpj": "12.345.678/0001-90",
+  "email": "contato@empresaabc.com.br",
+  "valor": 1500.00,
+  "impostos": 450.00,
+  "desconto": 0.00,
+  "valor_total": 1950.00,
+  "data_emissao": "2025-11-02",
+  "data_vencimento": "2025-12-02",
+  "descricao": "Serviços profissionais de consultoria em tecnologia",
+  "itens": [
+    {
+      "codigo": "SVB-001",
+      "descricao": "Consultoria em AWS",
+      "quantidade": 20,
+      "valor_unitario": 75.00,
+      "valor_total": 1500.00
+    }
+  ],
+  "metodo_pagamento": "Pix",
+  "observacoes": "Pagamento através de Pix na chave aleatória"
+}
