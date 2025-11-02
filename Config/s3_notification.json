@@ -1,0 +1,25 @@
+# ============================================================
+# ID: CONFIG-001
+# Nome: Configuração de Notificação S3
+# Descrição: Define o trigger para acionar Lambda ao upload
+# Versão: 1.0
+# ============================================================
+
+{
+  "LambdaFunctionConfigurations": [
+    {
+      "LambdaFunctionArn": "arn:aws:lambda:us-east-1:000000000000:function:ProcessarNotasFiscais",
+      "Events": ["s3:ObjectCreated:*"],
+      "Filter": {
+        "Key": {
+          "FilterRules": [
+            {
+              "Name": "suffix",
+              "Value": ".json"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
